@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Manager</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Stock Manager</h1>
+        <div id="stock-list" class="mb-4"></div>
+        <form id="stock-form">
+            <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder="Stock Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="ticker-symbol" class="form-control" placeholder="Ticker Symbol" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="price" class="form-control" placeholder="Price" step="0.01" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Stock</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
